@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottomview_navigation"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.amrullaev.valyutakursi.fragments.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/allCurseFragment"
+        android:name="com.amrullaev.valyutakursi.fragments.AllCurseFragment"
+        android:label="fragment_all_curse"
+        tools:layout="@layout/fragment_all_curse" />
+    <fragment
+        android:id="@+id/calcFragment"
+        android:name="com.amrullaev.valyutakursi.fragments.CalcFragment"
+        android:label="fragment_calc"
+        tools:layout="@layout/fragment_calc" />
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.amrullaev.valyutakursi.fragments.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" />
+</navigation>
