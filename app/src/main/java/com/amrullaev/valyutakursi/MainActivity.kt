@@ -17,13 +17,13 @@ class MainActivity : AppCompatActivity() {
 
 
         binding.menuIcon.setOnClickListener {
-            binding.drawer.openDrawer(GravityCompat.START)
+            binding.drawerLayout.openDrawer(GravityCompat.START)
         }
 
         binding.navView.setNavigationItemSelectedListener {
             when (it.itemId) {
                 1 -> {
-                    binding.drawer.closeDrawer(GravityCompat.START)
+                    binding.drawerLayout.closeDrawer(GravityCompat.START)
                 }
 
             }

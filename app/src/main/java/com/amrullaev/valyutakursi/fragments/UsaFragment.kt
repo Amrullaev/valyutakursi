@@ -34,9 +34,9 @@ class UsaFragment : Fragment() {
                 val response = retrofitClient.getCurse()
 
                 if (response.isSuccessful) {
-//                    val vp = curseDataItem.Rate.toInt() - curseDataItem.Diff.toInt()
+                    val vp = curseDataItem.Rate.toInt() - curseDataItem.Diff.toInt()
                     curseDataItem = response.body()!![0]
-                    binding.uszKursVp.text = curseDataItem.Diff
+                    binding.uszKursVp.text =vp.toString()
                     binding.uszKursOlinishiVp.text = curseDataItem.Rate
                     binding.dayVp.text = curseDataItem.Date
                     response.body()
