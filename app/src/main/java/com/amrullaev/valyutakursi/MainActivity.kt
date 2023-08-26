@@ -31,5 +31,18 @@ class MainActivity : AppCompatActivity() {
         }
         val navController = findNavController(R.id.navigationView)
         binding.navView.setupWithNavController(navController)
+
+
+        val navController1 = findNavController(R.id.navigationView)
+        binding.bottomView.setupWithNavController(navController)
+        navController.addOnDestinationChangedListener { _, destination, _ ->
+            when (destination.id) {
+                R.id.homeFragment, R.id.homeFragment, R.id.allCurseFragment, R.id.calcFragment -> {
+                    binding.bottomView.visibility = View.VISIBLE
+                }
+
+                else -> binding.bottomView.visibility = View.GONE
+            }
+        }
     }
 }

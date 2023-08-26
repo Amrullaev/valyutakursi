@@ -42,6 +42,14 @@
             app:defaultNavHost="true"
             app:navGraph="@navigation/drawer_navigation" />
 
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomView"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            app:labelVisibilityMode="selected"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:menu="@menu/bottomview_menu" />
+
     </androidx.appcompat.widget.LinearLayoutCompat>
 
     <com.google.android.material.navigation.NavigationView

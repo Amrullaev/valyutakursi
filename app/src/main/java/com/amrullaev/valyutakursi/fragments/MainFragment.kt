@@ -22,30 +22,30 @@ class MainFragment : Fragment() {
         _binding = FragmentMainBinding.inflate(layoutInflater)
 
 
-        val fr = requireActivity().supportFragmentManager.beginTransaction()
-        fr.add(R.id.fragmentsBox, HomeFragment())
-        fr.addToBackStack(null)
-        fr.commit()
-
-        binding.bottomView.setOnItemSelectedListener {
-            Log.d("TAG", "onCreateView: ${it.itemId}")
-            when (it.itemId) {
-                R.id.homeFragment -> {
-                    fr.add(R.id.fragmentsBox, HomeFragment())
-
-                }
-                R.id.allCurseFragment -> {
-                    fr.add(R.id.fragmentsBox, AllCurseFragment())
-                    fr.commit()
-
-                }
-                R.id.calcFragment -> {
-                    fr.add(R.id.fragmentsBox, CalcFragment())
-                    fr.commit()
-                }
-            }
-            return@setOnItemSelectedListener true
-        }
+//        val fr = requireActivity().supportFragmentManager.beginTransaction()
+//        fr.add(R.id.fragmentsBox, HomeFragment())
+//        fr.addToBackStack(null)
+//        fr.commit()
+//
+//        binding.bottomView.setOnItemSelectedListener {
+//            Log.d("TAG", "onCreateView: ${it.itemId}")
+//            when (it.itemId) {
+//                R.id.homeFragment -> {
+//                    fr.add(R.id.fragmentsBox, HomeFragment())
+//
+//                }
+//                R.id.allCurseFragment -> {
+//                    fr.add(R.id.fragmentsBox, AllCurseFragment())
+//                    fr.commit()
+//
+//                }
+//                R.id.calcFragment -> {
+//                    fr.add(R.id.fragmentsBox, CalcFragment())
+//                    fr.commit()
+//                }
+//            }
+//            return@setOnItemSelectedListener true
+//        }
 
 
         return binding.root
